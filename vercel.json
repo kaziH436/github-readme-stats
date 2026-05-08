@@ -10,5 +10,16 @@
       "source": "/",
       "destination": "https://github.com/anuraghazra/github-readme-stats"
     }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
   ]
 }
